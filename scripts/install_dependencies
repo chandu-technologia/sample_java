@@ -4,6 +4,7 @@ wget https://s3.amazonaws.com/dhqs-mirror-iad/apache-tomcat-8.0.39.tar.gz
 mkdir /opt/tomcat
 tar xvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 cd /opt/tomcat
-sed -i 's|port="8080"|port="80"|g' conf/server.xml
-rm -rf webapps/ROOT
-mv /home/ubuntu/javaapp/ROOT.war webapps/
+sed -i 's|port="8080"|port="80"|g' /opt/tomcat/conf/server.xml
+ls -ltrh /home/ubuntu/javaapp/
+ls -ltrh /opt/tomcat/
+mv /home/ubuntu/javaapp/Helloworld.war /opt/tomcat/webapps/
