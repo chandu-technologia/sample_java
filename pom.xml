@@ -6,6 +6,12 @@
     <version>1.0</version>
     <packaging>war</packaging>
     <name>Sample Spring MVC Application Using AWS CodeStar</name>
+    
+    <properties>
+       <maven.compiler.source>1.8</maven.compiler.source>
+       <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+    
     <dependencies>
 
         <dependency>
